@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Paper Design</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .graph-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(20px, 1fr)); /* Fill entire width */
+            grid-template-rows: repeat(auto-fill, minmax(20px, 1fr)); /* Fill entire height */
+            gap: 1px; /* Line spacing */
+            width: 100vw;
+            height: 100vh;
+            background-color: #ffffff;
+        }
+        .grid-cell {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #ddd; /* Light grid line */
+        }
+    </style>
+</head>
+<body>
+    <div class="graph-container">
+        <!-- Generate grid cells -->
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <!-- Repeat the cell div as many times as needed -->
+        <!-- (Or use a server-side loop/script for more cells) -->
+        <script>
+            // Generate cells using JavaScript to fill the grid
+            const container = document.querySelector('.graph-container');
+            for (let i = 0; i < 10000; i++) { // Adjust for a larger grid
+                const cell = document.createElement('div');
+                cell.className = 'grid-cell';
+                container.appendChild(cell);
+            }
+        </script>
+    </div>
+</body>
+</html>
