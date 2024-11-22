@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+      /* 
+      MAIN COLOR: #087f5b
+      GREY COLOR: #343a40
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+
+      .container {
+        font-size: 17px;
+        width: 700px;
+        margin: 20px auto;
+        background-color: white;
+        box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.15);
+        padding: 20px;
+        line-height: 1.6;
+        display: grid;
+        column-gap: 20px;
+        grid-template-columns: auto 1fr auto;
+        border-top: 4px solid green;
+      }
+      .container-inside {
+        margin-top: 15px;
+        /* margin-left: 50px; */
+        grid-column: 2;
+        grid-row: 2;
+
+        div {
+          margin-top: 20px;
+        }
+      }
+      ul {
+        color: #727273;
+        margin-left: 15px;
+        li {
+          margin-bottom: 5px;
+        }
+      }
+      .icon {
+        width: 24px;
+        height: 24px;
+        /* margin-left: 130px; */
+      }
+      .header {
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: subgrid;
+        color: #087f5b;
+        font-size: 25px;
+        font-weight: 500;
+      }
+
+      .item-1,
+      .item-3 {
+        border-top: none;
+        .container-inside {
+          display: none;
+        }
+
+        .header {
+          color: #72727354;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container item-1">
+      <div class="header">
+        <p>01</p>
+        <p>Where are these chairs assembled?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+      </div>
+
+      <div class="container-inside">
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi totam
+          eius voluptate sit quia numquam quasi voluptas. Voluptatem eius ut
+          cum, omnis, fuga voluptatum fugit perferendis architecto aspernatur
+          nobis nisi.
+        </div>
+        <div>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Quasi accusamus corporis totam tempora suscipit ab obcaecati.
+            </li>
+            <li>Repudiandae praesentium illo voluptate in, atque enim.</li>
+            <li>Repudiandae praesentium illo voluptate in, atque enim.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container item-2">
+      <div class="header">
+        <p>02</p>
+        <p>How long do I have to return my chair?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+      </div>
+
+      <div class="container-inside">
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi totam
+          eius voluptate sit quia numquam quasi voluptas. Voluptatem eius ut
+          cum, omnis, fuga voluptatum fugit perferendis architecto aspernatur
+          nobis nisi.
+        </div>
+        <div>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Quasi accusamus corporis totam tempora suscipit ab obcaecati.
+            </li>
+            <li>Repudiandae praesentium illo voluptate in, atque enim.</li>
+            <li>Repudiandae praesentium illo voluptate in, atque enim.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container item-3">
+      <div class="header">
+        <p>03</p>
+        <p>Do you ship to countries outside the EU?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+      </div>
+
+      <div class="container-inside">
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi totam
+          eius voluptate sit quia numquam quasi voluptas. Voluptatem eius ut
+          cum, omnis, fuga voluptatum fugit perferendis architecto aspernatur
+          nobis nisi.
+        </div>
+        <div>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Quasi accusamus corporis totam tempora suscipit ab obcaecati.
+            </li>
+            <li>Repudiandae praesentium illo voluptate in, atque enim.</li>
+            <li>Repudiandae praesentium illo voluptate in, atque enim.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
